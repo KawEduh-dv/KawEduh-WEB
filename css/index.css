@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('../font/minecraft_theme.ttf');
+    font-style: normal;
+}
+
+.pixelfont {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.minecraft_theme {
+    font-family: "minecraft", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*Define se é desktop*/
+@media only screen and (min-width: 800px) {
+
+    .wallpaper {
+        position: absolute;
+        width: 100.6%;
+        left: 0.8px;
+        margin: -7px;
+    }
+
+    .espaco {
+        width: 100.6%;
+        left: 0.8px;
+        margin: 0px;
+    }
+
+    /*Organiza a lista para que fica bem posisionada*/
+    section ul {
+        float: right;
+        display: block;
+        right: 16px;
+        bottom: 34px;
+        position: relative;
+        list-style: none;
+    }
+
+    /*Cria a borda e organiza cada elemento  com o ID "social"*/
+    section div#section {
+        background-color: #1d212e;
+        margin-right: 8px;
+        position: relative;
+        right: 0px;
+        padding: 12px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.2px;
+    }
+
+    /*Define a ordem e tamanho de cada li*/
+    section li {
+        font-family: "minecraft";
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+    }
+
+
+    /*Transforma o mouse em "clicavel"*/
+    section li {
+        cursor: pointer;
+        list-style: none;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*lados*/
+
+    p.pixelfont a {
+        text-decoration: none;
+        transition: all 0.2 ease;
+    }
+
+    .link:hover {
+        cursor: pointer;
+        font-size: 20pt;
+    }
+
+
+    /*esquerdo*/
+    aside.left {
+        bottom: 60px;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside div#leftImg {
+        display: block;
+        margin-right: 70px;
+    }
+
+    aside div#leftText {
+        width: 30%;
+        display: block;
+        font-family: minecraft;
+        margin-left: 30px;
+    }
+
+    div#leftText p {
+        text-align: justify;
+    }
+
+    /*direto*/
+
+    aside.right {
+        bottom: 60px;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside div#rightImg {
+        display: block;
+        margin-left: 70px;
+    }
+
+    aside div#rightText {
+        width: 30%;
+        display: block;
+        font-family: minecraft;
+        margin-right: 30px;
+    }
+
+    div#rightText p {
+        text-align: justify;
+    }
+
+}
+
+/*Define se é mobile*/
+@media only screen and (max-width: 800px) {
+
+    .wallpaper {
+        position: absolute;
+        width: 102.3%;
+        left: 0.7px;
+        top: 28px;
+        margin-right: -600px;
+    }
+
+    .espaco {
+        position: relative;
+        width: 100.6%;
+        left: 0.8px;
+        margin: 0px;
+    }
+
+    /*lados*/
+
+    p.pixelfont a {
+        text-decoration: none;
+        transition: all 0.2 ease;
+    }
+
+    p.pixelfont a:hover {
+        font-size: 12pt;
+    }
+
+    /*esquerdo*/
+    aside.left {
+        bottom: 60px;
+        right: 20px;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    aside div#leftImg {
+        display: none;
+    }
+
+    aside div#leftText {
+        width: 85%;
+        display: block;
+        font-family: minecraft;
+        font-size: 16pt;
+    }
+
+    div#leftText p {
+        text-align: justify;
+        font-size: 14pt;
+    }
+
+    /*direto*/
+
+    aside.right {
+        bottom: 60px;
+        right: 20px;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside div#rightImg {
+        display: none;
+    }
+
+    aside div#rightText {
+        width: 85%;
+        display: block;
+        font-family: minecraft;
+        font-size: 16pt;
+    }
+
+    div#rightText p {
+        text-align: justify;
+        font-size: 14pt;
+    }
+
+}
